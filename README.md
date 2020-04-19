@@ -1,2 +1,3 @@
-# tgmola
-The Geometry Meaning of Linear Algebra
+# 线性代数的几何意义
+
+　　本书是任广千、谢聪、胡翠芳三位老师编著的.
