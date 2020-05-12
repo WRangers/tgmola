@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amssymb}
+\usepackage{indentfirst}
+\usepackage[no-math]{fontspec}
+
+\usepackage{geometry}
+\geometry{a4paper,scale=0.9}
+
+\setlength\parindent{2em}
+\linespread{1.25}
+
+\usepackage{xeCJK}
+\xeCJKsetup{PlainEquation=true}
+\xeCJKsetup{CJKmath=true} 
+\setCJKmainfont[ItalicFont={楷体}]{Noto Serif CJK SC}
+\setCJKmonofont{SimSun} 
+\setCJKsansfont{黑体}    
+\usepackage{fourier} % set math font
+% \usepackage{mathptmx} % set math font
+\everymath{\displaystyle}
+% \setmainfont{Palatino-Roman}
+
+
+% \usepackage[siunitx,RPvoltages,european]{circuitikz}  % 使用英式符号
+% \def\killdepth#1{{\raisebox{0pt}[\height][0pt]{#1}}}  % 对齐命令,保持元器件的基线一致
+
+\usepackage{tikz}
+\usetikzlibrary{datavisualization}
+\usetikzlibrary{angles}
+\usetikzlibrary {arrows.meta}
+\usepackage{xcolor}
+
+\renewcommand{\,}{\ \text{,}}
+\renewcommand{\.}{\ \text{.}}
+\newcommand{\proofover}{\hfill $\square$}
+
+\begin{document}
+% \chapter{什么是线性代数}
+
+这一章的内容主要是想对线性代数的大的概念如线性函数、映射和线性变换以及线性代数的发展和应用作一简要介绍,本章的目的是让读者知道我们所学的线性代数的实质是什么,到底有什么用.
+
+线性代数是代数学乃至整个数学的一个忒重要的学科,顾名思义,它是研究线性问题的代数理论.那么什么是代数呢?
+
+\section{``代数''的意义}
+"代数"的英文是Algebra,源于阿拉伯语,其本意是"结合在一起".就是说代数的功能是把许多看似不相关的事物"结合在一起",也就是进行抽象.抽象的目的不是故弄玄虚,而是为了解决问题的方便,为了提高效率,把许多看似不相关的问题化归为一类问题.
+
+抽象实际上并不神秘和高深,我们从小就学会了抽象:
+
+蹒跚学步的时候,爸妈是这样通过举例子教会孩子数的概念是如何抽象出来的:
+
+这是1个苹果,那是1个糖块,还有1个皮球 慢慢地我们忽略了物质上的差别,明白了"1"这个数量的含义,并及时地应用上了:"妈妈我要1个冰激淋!"
+
+幼儿园及小学时老师也是这样教会我们数的加法运算法则是如何抽象出来的：
+
+2个苹果加上3个苹果是5个苹果；2个糖块加上3个糖块是5个糖块；
+
+……
+
+2加上3就等于5，用符号表示就是$2+3=5$.
+
+这样我们进一步地忽略了相加物体的大小、长短及原料的差别，只关心数量叠加的运算去则。
+
+初中的时候，老师又进一步地教会了我们数及运算法则的进一步抽象：
+$$\begin{aligned}
+    (1+2)^{2}=&1^{2}+2(1 \times 2)+2^{2}\, \\
+    (3+4)^{2}=&3^{2}+2(3 \times 4)+4^{2}\, \\
+    &……
+    \end{aligned}$$
+
+用字母代替数值,得到完全平方公式:$(a+b)^{2}=a^{2}+2 a b+b^{2}$.
+
+好了，抽象又进了一步：不关心具体数值的运算，只关心它们的运算规律。到了这时候，我们开始学习一门叫代数的数学课，代数代数就是用字母代替数进行运算。从某种意义上来说，代数就是把算术推广到比具体的数更抽象的对象（运算规则）上面去。
+
+抽象还可以更近一步:高中时开始知道,公式$(a+b)^{2}=a^{2}+2 a b+b^{2}$中的字母不仅可以代表数,还可以同时代表方向——也就是可以代表向量;并将其中的乘积$a^2$、$ab$解释为向量
+\end{document}
