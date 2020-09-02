@@ -1,0 +1,68 @@
+\documentclass[12pt]{book}
+
+%% 页面尺寸
+\usepackage{geometry}
+% \geometry{a4paper,scale=0.9}
+
+%% 字体、间距与标点
+\usepackage[T1]{fontenc}
+\usepackage{inputenc}
+\usepackage[no-math]{fontspec}
+\usepackage{indentfirst}
+\setlength\parindent{2em}
+\linespread{1.3}
+% 数学
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{stix}
+\usepackage[bb=ams,
+            scr=rsfs]{mathalpha}
+\everymath{\displaystyle}
+% 中英文字体
+% \usepackage{ctex}
+\usepackage{xeCJK}
+% \newCJKfontfamily[song]\songti{SimSun}
+% \xeCJKsetup{PunctStyle=banjiao,PunctFamily=song}
+\xeCJKsetup{PlainEquation=true}
+\xeCJKsetup{CJKmath=true} 
+\setCJKmainfont[ItalicFont={楷体}]{Noto Serif CJK SC}
+\setCJKmonofont{SimSun} 
+\setCJKsansfont{黑体}    
+\setmainfont{Times New Roman}
+\setmonofont{Courier}
+% \newfamily\unicodefont{Zapfino}
+% \usepackage{fourier} % set math font
+% \usepackage{mathptmx} % set math font
+% \usepackage{amsfonts}
+% \usepackage{mathrsfs}
+% \setmainfont{Palatino-Roman}
+
+%% 绘图
+% pgf
+\usepackage{tikz}
+\usetikzlibrary{datavisualization}
+\usetikzlibrary{angles}
+\usetikzlibrary {arrows.meta}
+% 电路
+% \usepackage[siunitx,RPvoltages,european]{circuitikz}  % 使用英式符号
+% \def\killdepth#1{{\raisebox{0pt}[\height][0pt]{#1}}}  % 对齐命令,保持元器件的基线一致
+
+%% 其他
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{hidelinks,
+            colorlinks=false,
+            breaklinks=true,
+            bookmarks=true}
+
+\begin{document}
+\input{others/简介}
+\input{others/前言}
+
+\tableofcontents
+
+\input{chapters/ch1}
+\input{others/后记}
+
+\end{document}
